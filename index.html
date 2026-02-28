@@ -36,10 +36,24 @@
         }
         .game-container{
             background:var(--white); border-radius:16px; box-shadow:0 12px 24px rgba(0,0,0,.12);
-            padding:1.2rem; max-width:980px; width:100%; min-height:640px; position:relative; overflow:hidden;
+            padding:1.2rem; 
+            max-width: 900px; 
+            width:100%; min-height:640px; position:relative; overflow:hidden;
             display:flex; flex-direction:column;
             margin-bottom: 2rem; 
         }
+
+        /* AJUSTE PARA MÓVILES: Márgenes laterales */
+        @media (max-width: 600px) {
+            body {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .game-container {
+                border-radius: 12px; /* Ligera reducción del borde para estética */
+            }
+        }
+
         header{ text-align:center; margin-bottom:.8rem; margin-top:1.5rem; }
         h1{ color:var(--blue-dark); font-size:clamp(2rem,5.2vw,3.1rem); font-weight:900; letter-spacing:.5px; }
         .subtitle{ color:var(--blue-700); font-size:clamp(1rem,3.5vw,1.25rem); margin-top:.25rem; }
@@ -69,6 +83,8 @@
         .start-content{ display:flex; flex-direction:column; justify-content:center; align-items:center; flex:1; gap:1rem; padding:1rem; }
         .advice-box{ background:var(--panel); border-left:4px solid var(--blue-700); padding:1rem 1.2rem; border-radius:12px;
             color:var(--blue-700); max-width:760px; text-align:center; font-size:clamp(1rem,3vw,1.15rem); }
+        
+        /* Imagen SIN sombra */
         .start-image{ max-width: 300px; width: 100%; margin: 0 auto; }
         
         .mute-btn{ position:absolute; top:.8rem; right:4.5rem; background:var(--orange); color:#fff; border:2px solid #fff; width:38px; height:38px; border-radius:50%; cursor:pointer; font-size:1rem; display:flex; align-items:center; justify-content:center; z-index:20; }
@@ -172,12 +188,14 @@
             background: transparent; 
             min-height: 300px;
         }
+        /* Imagen Juego 2 CON sombra */
         .image-display img {
             max-width: 100%;
             height: auto;
             max-height: 400px;
             object-fit: contain;
             border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
         /* Lista desplegable SIN SCROLL */
@@ -314,7 +332,10 @@
         
         .credit{ color:var(--blue-700); margin-top:1rem; }
         #finalMsg { font-size: clamp(1.2rem, 4.2vw, 1.8rem); font-weight: 800; color: var(--blue-700); margin-top: 0.6rem; }
+        
+        /* Logo colegio SIN sombra */
         .school-logo { display: block; width: 160px; max-width: 28%; height: auto; margin-top: 0.8rem; border-radius: 8px; object-fit: contain; }
+        
         @media (max-width: 899px) { .school-logo { width: 140px; max-width: 160px; } }
         @media (max-width: 420px) { .school-logo { width: 110px; max-width: 40%; margin-top: 0.6rem; } }
 
