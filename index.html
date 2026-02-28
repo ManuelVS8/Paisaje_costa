@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="google" content="notranslate">
-    <title>Elementos del paisaje interior</title>
+    <title>Elementos del paisaje de costa</title>
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/icono.ico">
     <style>
         /* ====== Reset & base ====== */
@@ -344,13 +344,13 @@
     <!-- Pantalla de Inicio -->
     <section class="screen active" id="startScreen">
         <header>
-            <h1>Elementos del paisaje interior</h1>
+            <h1>Elementos del paisaje de costa</h1>
             <div class="subtitle">Identifica los siguientes elementos del relieve</div>
         </header>
 
         <div class="start-content">
             <div class="advice-box">
-                <span class="advice-text">El relieve es la forma que presenta un territorio. Los principales elementos son: <span class="highlight-keyword">montaña, sierra, cordillera, valle, colina, llanura, meseta</span> y <span class="highlight-keyword">depresión</span>. ¡Identifícalos!</span>
+                <span class="advice-text">El relieve es la forma que presenta un territorio. Los principales elementos son: <span class="highlight-keyword">Isla, Archipiélago, península, cabo, acantilado, golfo, bahía</span> y <span class="highlight-keyword">cala</span>. ¡Identifícalos!</span>
                 <strong style="display:block; margin-top:0.5rem; text-align: center;">¡Ánimo!</strong>
             </div>
             
@@ -378,32 +378,32 @@
     <!-- Pantalla Resumen -->
     <section class="screen" id="summaryScreen">
         <header>
-            <h1>El paisaje de interior</h1>
+            <h1>El paisaje de costa</h1>
         </header>
         <div class="theory-content">
             <div class="system-item">
-                <span class="system-name">Montaña</span>Elevaciones del terreno que acaban en una cima.
+                <span class="system-name">Isla</span>Terreno rodeado de agua por todas partes.
             </div>
             <div class="system-item">
-                <span class="system-name">Sierra</span>Conjunto de montañas alineadas.
+                <span class="system-name">Península</span>Terreno rodeado de agua por todas partes menos por una.
             </div>
             <div class="system-item">
-                <span class="system-name">Cordillera</span>Conjunto de sierras.
+                <span class="system-name">Archipiélago</span>Conjunto de islas.
             </div>
             <div class="system-item">
-                <span class="system-name">Valle</span>Terreno entre dos montañas. Suele pasar un río.
+                <span class="system-name">Cabo</span>Entrada de tierra en el mar.
             </div>
             <div class="system-item">
-                <span class="system-name">Colina</span>Montaña de pequeño tamaño.
+                <span class="system-name">Acantilado</span>Muro de roca junto a la costa.
             </div>
             <div class="system-item">
-                <span class="system-name">Llanura</span>Terreno plano sin elevaciones.
+                <span class="system-name">Golfo</span>Entrada grande del mar en la tierra.
             </div>
             <div class="system-item">
-                <span class="system-name">Meseta</span>Es una llanura elevada.
+                <span class="system-name">Bahía</span>Entrada mediana del mar en la tierra.
             </div>
             <div class="system-item">
-                <span class="system-name">Depresión</span>Es una llanura hundida.
+                <span class="system-name">Cala</span>Entrada pequeña del mar en la tierra.
             </div>
         </div>
         <div style="text-align: center;">
@@ -414,7 +414,7 @@
     <!-- Pantalla Juego 1 -->
     <section class="screen" id="game1Screen">
         <header>
-            <h1>Empareja las tarjetas</h1>
+            <h1>Empareja los elementos del paisaje de costa con su definición</h1>
         </header>
         <div class="game-info">
             <div class="timer" id="timerGame1">00:00.0</div>
@@ -427,7 +427,7 @@
     <!-- Pantalla Juego 2 -->
     <section class="screen" id="game2Screen">
         <header>
-            <h1>Identifica los elementos del relieve</h1>
+            <h1>Identifica los elementos del paisaje de costa</h1>
         </header>
         <div class="game-info">
             <div class="timer" id="timerGame2">00:00.0</div>
@@ -443,16 +443,16 @@
 
             <div class="custom-select-wrapper drop-up">
                 <div class="custom-select" id="customSelect">
-                    <div class="custom-select__trigger"><span>Elementos del relieve</span></div>
+                    <div class="custom-select__trigger"><span>Relieve de costa</span></div>
                     <div class="custom-options">
-                        <span class="custom-option" data-value="Montaña">Montaña</span>
-                        <span class="custom-option" data-value="Sierra">Sierra</span>
-                        <span class="custom-option" data-value="Cordillera">Cordillera</span>
-                        <span class="custom-option" data-value="Valle">Valle</span>
-                        <span class="custom-option" data-value="Colina">Colina</span>
-                        <span class="custom-option" data-value="Llanura">Llanura</span>
-                        <span class="custom-option" data-value="Meseta">Meseta</span>
-                        <span class="custom-option" data-value="Depresión">Depresión</span>
+                        <span class="custom-option" data-value="Isla">Isla</span>
+                        <span class="custom-option" data-value="Archipiélago">Archipiélago</span>
+                        <span class="custom-option" data-value="Península">Península</span>
+                        <span class="custom-option" data-value="Cabo">Cabo</span>
+                        <span class="custom-option" data-value="Acantilado">Acantilado</span>
+                        <span class="custom-option" data-value="Golfo">Golfo</span>
+                        <span class="custom-option" data-value="Bahía">Bahía</span>
+                        <span class="custom-option" data-value="Cala">Cala</span>
                     </div>
                 </div>
             </div>
@@ -499,7 +499,7 @@
 
 <script>
     /* --- 1. CONFIGURACIÓN DE VARIABLES GLOBALES (CRÍTICO) --- */
-    const SHEET_NAME = "Interior";
+    const SHEET_NAME = "Costa";
     const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyAyHMXyc0aZafOMXQtfQ3YztUTDToN7D8jm62ESrLJwDEj_rdWfgryi7clcgW1ednZ/exec";
     
     let soundEnabled = true;
@@ -535,25 +535,25 @@
 
     /* --- DATOS DEL JUEGO --- */
     const game1Data = [
-        { id: 1, term: 'Montaña', def: 'Elevaciones del terreno que acaban en una cima', pairId: 1 },
-        { id: 2, term: 'Sierra', def: 'Conjunto de montañas alineadas', pairId: 2 },
-        { id: 3, term: 'Cordillera', def: 'Conjunto de sierras', pairId: 3 },
-        { id: 4, term: 'Valle', def: 'Terreno entre dos montañas. Suele pasar un río', pairId: 4 },
-        { id: 5, term: 'Colina', def: 'Montaña de pequeño tamaño', pairId: 5 },
-        { id: 6, term: 'Llanura', def: 'Terreno plano sin elevaciones', pairId: 6 },
-        { id: 7, term: 'Meseta', def: 'Es una llanura elevada', pairId: 7 },
-        { id: 8, term: 'Depresión', def: 'Es una llanura hundida', pairId: 8 }
+        { id: 1, term: 'Isla', def: 'Terreno rodeado de agua por todas partes', pairId: 1 },
+        { id: 2, term: 'Archipiélago', def: 'Conjunto de islas', pairId: 2 },
+        { id: 3, term: 'Península', def: 'Terreno rodeado de agua por todas partes menos por una', pairId: 3 },
+        { id: 4, term: 'Acantilado', def: 'Muro de roca junto a la costa', pairId: 4 },
+        { id: 5, term: 'Cabo', def: 'Entrada de tierra en el mar', pairId: 5 },
+        { id: 6, term: 'Golfo', def: 'Entrada grande del mar en la tierra', pairId: 6 },
+        { id: 7, term: 'Bahía', def: 'Entrada mediana del mar en la tierra', pairId: 7 },
+        { id: 8, term: 'Cala', def: 'Entrada pequeña del mar en la tierra', pairId: 8 }
     ];
 
     const game2Data = [
-        { type: 'Montaña', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20interior/Montana.png' },
-        { type: 'Sierra', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20interior/Sierra.png' },
-        { type: 'Cordillera', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20interior/Cordillera.png' },
-        { type: 'Valle', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20interior/Valle.png' },
-        { type: 'Colina', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20interior/Colina.png' },
-        { type: 'Llanura', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20interior/Llanura.png' },
-        { type: 'Meseta', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20interior/Meseta.png' },
-        { type: 'Depresión', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20interior/Depresion.png' }
+        { type: 'Golfo', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20Costa/Golfo.png' },
+        { type: 'Bahía', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20Costa/Bahia.png' },
+        { type: 'Cala', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20Costa/Cala.png' },
+        { type: 'Cabo', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20Costa/Cabo.png' },
+        { type: 'Acantilado', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20Costa/Acantilado.png' },
+        { type: 'Isla', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20Costa/Isla.png' },
+        { type: 'Península', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20Costa/Peninsula.png' },
+        { type: 'Archipiélago', img: 'https://raw.githubusercontent.com/ManuelVS8/Audios-juegos-SCIENCE/refs/heads/main/Relieve_Paisaje/Elementos%20Costa/Archipielago.png' }
     ];
 
     /* --- FUNCIONES DE AUDIO --- */
@@ -764,7 +764,7 @@
         
         document.getElementById('levelIndicator').textContent = currentIndex2 + 1;
         
-        selectTrigger.innerHTML = '<span>Elementos del relieve</span>';
+        selectTrigger.innerHTML = '<span>Relieve de costa</span>';
         selectTrigger.classList.remove('selected', 'correct', 'wrong');
         currentSelection = null;
         checkBtn.style.display = 'inline-flex';
